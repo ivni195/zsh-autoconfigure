@@ -5,6 +5,7 @@ sudo apt update
 sudo apt install -y zsh
 
 # install oh-my-zsh
+touch ~/.zshrc
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # install zsh-autosuggestions plugin

@@ -1,14 +1,14 @@
 #/bin/bash
 
 # install zsh
-if [ -x "$(command -v apk)" ];       then installer="apk add --no-cache"
-elif [ -x "$(command -v apt)" ];     then installer="apt update && apt install -y"
-elif [ -x "$(command -v dnf)" ];     then installer="dnf install"
-elif [ -x "$(command -v zypper)" ];  then installer="zypper install"
-elif [ -x "$(command -v pacman)" ];  then installer="pacman --noconfirm -S"
+if [ -x "$(command -v apk)" ];       then installer="sudo apk add --no-cache"
+elif [ -x "$(command -v apt)" ];     then installer="sudo apt update && sudo apt install -y"
+elif [ -x "$(command -v dnf)" ];     then installer="sudo dnf install"
+elif [ -x "$(command -v zypper)" ];  then installer="sudo zypper install"
+elif [ -x "$(command -v pacman)" ];  then installer="sudo pacman --noconfirm -S"
 else echo "FAILED TO INSTALL PACKAGE: Package manager not found. You must manually install: zsh">&2; exit; fi
 
-sh -c "sudo $installer zsh"
+sh -c "$installer zsh"
 
 # install oh-my-zsh
 touch ~/.zshrc

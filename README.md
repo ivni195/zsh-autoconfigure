@@ -16,5 +16,5 @@ My custom setup for oh-my-zsh.
 `dst`
 ## Install
 ```bash
-sh -c $(curl -fsSL https://raw.githubusercontent.com/ivni195/zsh-autoconfigure/main/install.sh)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ivni195/zsh-autoconfigure/main/install.sh)"
 ```

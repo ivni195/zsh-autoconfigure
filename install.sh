@@ -32,6 +32,7 @@ sed -iE 's/plugins=[(]git[)]/plugins=(\
     jump\
     sublime\
     sudo\
+    docker\
     themes\
     copyfile\
     copydir\

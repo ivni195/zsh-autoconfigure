@@ -6,7 +6,7 @@ elif [ -x "$(command -v apt)" ];     then installer="apt update && apt install -
 elif [ -x "$(command -v dnf)" ];     then installer="dnf install"
 elif [ -x "$(command -v zypper)" ];  then installer="zypper install"
 elif [ -x "$(command -v pacman)" ];  then installer="pacman --noconfirm -S"
-else echo "FAILED TO INSTALL PACKAGE: Package manager not found. You must manually install: $packagesNeeded">&2; exit; fi
+else echo "FAILED TO INSTALL PACKAGE: Package manager not found. You must manually install: zsh">&2; exit; fi
 
 sh -c "sudo $installer zsh"
 

@@ -26,7 +26,7 @@ cd ..
 rm -rf fonts
 
 # set plugins and theme
-sed -iE 's/plugins=.*/plugins=(\
+sed -iE 's/plugins=[(]git[)]/plugins=(\
     git\
     colored-man-pages\
     jump\

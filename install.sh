@@ -26,14 +26,15 @@ cd ..
 rm -rf fonts
 
 # set plugins and theme
-sed -iE 's/plugins=[(]git[)]/plugins=(\
+sed -iE 's/plugins=.*/plugins=(\
     git\
     colored-man-pages\
     jump\
+    pip\
+    aliases\
     sublime\
     sudo\
     docker\
-    themes\
     copyfile\
     copydir\
     command-not-found\

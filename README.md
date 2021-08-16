@@ -4,9 +4,11 @@ My custom setup for oh-my-zsh.
 - git
 - colored-man-pages
 - jump
+- pip
+- aliases
 - sublime
 - sudo
-- themes
+- docker
 - copyfile
 - copydir
 - command-not-found

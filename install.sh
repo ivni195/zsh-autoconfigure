@@ -14,6 +14,8 @@ sh -c "$installer zsh"
 touch ~/.zshrc
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+# install msfvenom autocompletion plugin
+git clone https://github.com/Green-m/msfvenom-zsh-completion ~/.oh-my-zsh/custom/plugins/msfvenom/
 # install zsh-autosuggestions plugin
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 # install zsh-syntax-highlighting plugin
@@ -40,6 +42,7 @@ sed -iE 's/plugins=[(]git[)]/plugins=(\
     command-not-found\
     zsh-syntax-highlighting\
     zsh-autosuggestions\
+    msfvenom\
 )/g' ~/.zshrc
 sed -iE 's/ZSH_THEME=.*/ZSH_THEME="dst"/g' ~/.zshrc
 # restart shell

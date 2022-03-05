@@ -36,7 +36,7 @@ sed -iE 's/plugins=[(]git[)]/plugins=(\
     sudo\
     docker\
     copyfile\
-    copydir\
+    copypath\
     command-not-found\
     zsh-syntax-highlighting\
     zsh-autosuggestions\
